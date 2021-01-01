@@ -5,9 +5,9 @@ spring:
 ---
 spring:
   profiles: dev   #开发环境
-    name:  microservicecloud-config-atguigu-dev
+    name: microservicecloud-config-atguigu-dev
 ---
 spring:
   profiles: test   #测试环境
-    name:  microservicecloud-config-atguigu-test 
+    name: microservicecloud-config-atguigu-test 
 #文件保存为utf-8
