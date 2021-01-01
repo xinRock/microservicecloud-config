@@ -4,11 +4,11 @@ spring:
     - dev
 ---
 server: 
-  port: 8001 #Ã°ºÅºóÃæ±ØĞëÓĞ¿Õ¸ñ
+  port: 8001 #å†’å·åé¢å¿…é¡»æœ‰ç©ºæ ¼
 spring:
   profiles: dev
   application:
-    name: microservicecloud-config-dept-clien  #ºÍÎ¢·şÎñµÃÅäÖÃÎÄ¼şÃûÏàÍ¬
+    name: microservicecloud-config-dept-clien  #å’Œå¾®æœåŠ¡å¾—é…ç½®æ–‡ä»¶åç›¸åŒ
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
@@ -39,11 +39,11 @@ info:
   build.version: $project.version$
 ---
 server: 
-  port: 8001 #Ã°ºÅºóÃæ±ØĞëÓĞ¿Õ¸ñ
+  port: 8001 #å†’å·åé¢å¿…é¡»æœ‰ç©ºæ ¼
 spring:
   profiles: test
   application:
-    name: microservicecloud-config-dept-clien  #ºÍÎ¢·şÎñµÃÅäÖÃÎÄ¼şÃûÏàÍ¬
+    name: microservicecloud-config-dept-clien  #å’Œå¾®æœåŠ¡å¾—é…ç½®æ–‡ä»¶åç›¸åŒ
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver

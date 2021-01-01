@@ -4,33 +4,33 @@ spring:
     - dev
 ---
 server: 
-  port: 7001 #注册中心占用7001端口，冒号后面必须有空格
+  port: 7001 #娉ㄥ唽涓績鍗犵敤7001绔彛锛屽啋鍙峰悗闈㈠繀椤绘湁绌烘牸
 spring:
   profiles: dev
   application:
-    name: microservicecloud-config-eureka-clien  #和微服务得配置文件名相同
+    name: microservicecloud-config-eureka-clien  #鍜屽井鏈嶅姟寰楅厤缃枃浠跺悕鐩稿悓
    
 eureka:
   instance:
     hostname: 127.0.0.1
   client:
-    register-with-eureka: false#当前得eureka-server就一个，无需注册
-    fetch-registry: false #不通过eureka获取注册信息
+    register-with-eureka: false  #褰撳墠寰梕ureka-server灏变竴涓紝鏃犻渶娉ㄥ唽
+    fetch-registry: false        #涓嶉�氳繃eureka鑾峰彇娉ㄥ唽淇℃伅
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka/
 ---
 server: 
-  port: 7001 #注册中心占用7001端口，冒号后面必须有空格
+  port: 7001     #娉ㄥ唽涓績鍗犵敤7001绔彛锛屽啋鍙峰悗闈㈠繀椤绘湁绌烘牸
 spring:
   profiles: test
   application:
-    name: microservicecloud-config-eureka-clien  #和微服务得配置文件名相同
+    name: microservicecloud-config-eureka-clien  #鍜屽井鏈嶅姟寰楅厤缃枃浠跺悕鐩稿悓
    
 eureka:
   instance:
     hostname: 127.0.0.1
   client:
-    register-with-eureka: false#当前得eureka-server就一个，无需注册
-    fetch-registry: false #不通过eureka获取注册信息
+    register-with-eureka: false   #褰撳墠寰梕ureka-server灏变竴涓紝鏃犻渶娉ㄥ唽
+    fetch-registry: false         #涓嶉�氳繃eureka鑾峰彇娉ㄥ唽淇℃伅
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka/
